@@ -8,95 +8,71 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center;color:#fff}
-.page{width:100%;max-width:420px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;padding:24px 16px 36px;min-height:100vh}
+.page{width:100%;max-width:420px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;padding:0 0 36px;min-height:100vh;border-radius:20px;overflow:hidden}
+.top-banner{width:100%;background:#FF0000;padding:18px 16px;text-align:center}
+.top-banner span{display:block;font-size:21px;font-weight:900;color:#fff;line-height:1.15;text-transform:uppercase}
+.content{padding:22px 18px 0;display:flex;flex-direction:column;align-items:center;width:100%}
+.last-chance{font-size:13px;font-weight:600;color:#D1D5DB;margin-bottom:14px}
 
-/* BADGE SUPERIOR - BORDA E BRILHO VERDE (SEM PARÊNTESES) */
-.bought-badge{background:rgba(0,0,0,0.8);border:1.5px solid #22C55E;color:#E2E2E6;font-size:11.5px;font-weight:600;padding:9px 18px;border-radius:999px;text-align:center;margin-bottom:20px;width:fit-content;max-width:95%;line-height:1.3;box-shadow:0 0 12px rgba(34,197,94,0.25)}
+/* TÍTULO OTIMIZADO 32PX */
+.main-title{font-size:32px;font-weight:900;line-height:0.95;text-align:center;text-transform:uppercase;letter-spacing:-0.8px;margin-bottom:12px}
+.main-title .p{color:#8B5CF6}
+.main-title .w{color:#fff}
 
-/* TÍTULO PRINCIPAL */
-.main-title{font-size:20px;font-weight:900;line-height:1.2;text-align:center;margin-bottom:10px;color:#FFFFFF;text-transform:uppercase;letter-spacing:-0.2px}
-
-/* APRESENTAÇÃO */
-.intro-text{font-size:14px;color:#E4E4E7;text-align:center;line-height:1.45;margin-bottom:24px;font-weight:400;max-width:340px}
-.intro-text span.purple-highlight{color:#A855F7;font-weight:700}
-
-/* O QUE ELA FAZ */
-.feature-box{width:100%;text-align:center;margin-bottom:24px}
-.feature-title{font-size:15px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;color:#FFFFFF}
-.feature-desc-gray{font-size:13.5px;color:#A1A1A6;line-height:1.5;font-weight:400;max-width:340px;margin:0 auto 4px auto}
-.feature-desc-white{font-size:13.5px;color:#FFFFFF;line-height:1.5;font-weight:600;max-width:340px;margin:0 auto}
-
-/* CAIXA DE URGÊNCIA - CARD PRETO COM TEXTO VERMELHO E BRANCO */
-.timer-card{width:100%;background:#000000;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;text-align:center;margin:0 auto 26px auto}
-.timer-card .t-head{font-size:12px;font-weight:800;color:#EF4444;letter-spacing:0.5px;margin-bottom:6px;text-transform:uppercase}
-.timer-card .t-body{font-size:13px;color:#FFFFFF;font-weight:500;line-height:1.4}
-
-/* OFERTA E BOTÃO */
-.offer-section{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
-.offer-tag{font-size:10.5px;font-weight:800;color:#8E8E93;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.price-display{font-size:22px;font-weight:900;color:#fff;margin-bottom:14px}
-.price-display span{color:#A855F7}
-
-/* BOTÃO CTA PÍLULA OVAL COMPACTO */
-.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:fit-content;min-width:260px;max-width:90%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:15px 28px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin-bottom:10px;box-shadow:0 6px 20px rgba(168,85,247,0.3);text-decoration:none;text-transform:uppercase;cursor:pointer}
-
-.guarantee-note{font-size:11.5px;color:#A1A1A6;margin-bottom:24px;font-weight:400}
-
-/* LINK DE RECUSA */
-.refuse-btn{font-size:11px;color:#6E6E73;text-decoration:underline;line-height:1.4;max-width:300px;text-align:center;display:inline-block}
-
-.div-line{height:1px;width:80%;margin:28px auto 18px;background:rgba(255,255,255,0.08)}
-.foot-text{font-size:11px;color:#636366;text-align:center}
+.sub-title{font-size:13.5px;color:#A1A1AA;text-align:center;margin-bottom:18px;font-weight:500}
+.timer-card{width:100%;background:#1E1E1E;border:1.5px solid #FF0000;border-radius:12px;padding:14px 12px;text-align:center;margin-bottom:18px}
+.timer-card .t-head{font-size:15px;font-weight:900;color:#fff;text-transform:uppercase}
+.timer-card .t-head span{color:#FF0000}
+.timer-card .t-body{font-size:12px;color:#A1A1AA;margin-top:4px}
+.opp{font-size:14px;font-weight:700;color:#fff;text-align:center;line-height:1.35;margin-bottom:22px}
+.guardiao{font-size:14.5px;font-weight:800;color:#fff;text-align:center;margin-bottom:10px}
+.attention{font-size:14px;font-weight:600;color:#fff;text-align:center;margin-bottom:12px;line-height:1.35}
+.attention span{color:#8B5CF6;font-weight:800}
+.desc{font-size:12.5px;color:#D4D4D8;text-align:center;line-height:1.45;margin-bottom:20px}
+.bullets{width:100%;display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.bullet{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff}
+.bullet .icon{width:26px;height:26px;background:#8B5CF6;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;flex-shrink:0}
+.offer-tag{font-size:11px;font-weight:800;color:#8E8E93;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:6px}
+.price-display{font-size:24px;font-weight:900;color:#fff;margin-bottom:16px;text-align:center}
+.price-display span{color:#8B5CF6}
+.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:fit-content;min-width:320px;max-width:90%;background:#A78BFA;color:#fff;border:none;border-radius:9999px;padding:18px 56px;font-weight:900;font-size:17px;letter-spacing:0.3px;margin-bottom:12px;text-decoration:none;text-transform:uppercase;box-shadow:0 8px 24px rgba(167,139,250,0.35)}
+.guarantee-note{font-size:11.5px;color:#E4E4E7;text-align:center;margin-bottom:18px}
+.refuse-btn{font-size:11px;color:#9CA3AF;text-decoration:underline;line-height:1.35;max-width:320px;text-align:center;display:inline-block}
 </style>
 </head>
 <body>
-
 <div class="page">
-  <!-- BADGE SUPERIOR COM BORDA VERDE (SEM PARÊNTESES) -->
-  <div class="bought-badge">
-    Você acabou de adquirir o Guardião de Contratos por apenas R$ 39,90/mês
+  <div class="top-banner">
+    <span>ESPERE! SEU PEDIDO FOI APROVADO</span>
+    <span>MAS NÃO SAIA AGORA</span>
   </div>
-
-  <!-- TÍTULO BRANCO -->
-  <div class="main-title">ACHAMOS QUE VOCÊ PODE GOSTAR</div>
-
-  <!-- INTRODUÇÃO / APRESENTAÇÃO -->
-  <div class="intro-text">
-    Apresentamos outra ferramenta chamada de Inter <span class="purple-highlight">Conferência Contábil</span>.
-  </div>
-
-  <!-- O QUE ELA FAZ -->
-  <div class="feature-box">
-    <div class="feature-title">O QUE ELA FAZ?</div>
-    <div class="feature-desc-gray">Te economiza 3h em cada fechamento.</div>
-    <div class="feature-desc-white">Varre seu balancete e aponta erros fiscais e a conta exata que vai te multar no ECD, antes de você enviar.</div>
-  </div>
-
-  <!-- CAIXA DE ESCASSEZ (CARD PRETO) -->
-  <div class="timer-card">
-    <div class="t-head">⚠️ OFERTA EXPIRA EM MENOS DE 1 HORA</div>
-    <div class="t-body">Oportunidade única: Leve agora por apenas 59,90/mês. Depois volta para R$ 97</div>
-  </div>
-
-  <!-- OFERTA E BOTÃO DE COMPRA -->
-  <div class="offer-section">
+  <div class="content">
+    <div class="last-chance">Última chance</div>
+    <div class="main-title">
+      <div class="p">INTER</div>
+      <div class="w">CONFERÊNCIA</div>
+      <div class="p">CONTÁBIL</div>
+    </div>
+    <div class="sub-title">Aponta exatamente onde o ser humano precisa olhar.</div>
+    <div class="timer-card">
+      <div class="t-head">ESTA OFERTA EXPIRA EM: <span>09:47</span></div>
+      <div class="t-body">Essa página será fechada quando o contador zerar</div>
+    </div>
+    <div class="opp">Oportunidade única: Leve por apenas R$59,90.<br>Depois volta para R$97.</div>
+    <div class="guardiao">Você já garantiu o Guardião de Contratos por apenas R$39,90</div>
+    <div class="attention">Mas atenção: <span>89%</span> dos usuários estão levando a ferramenta de conferência contábil.</div>
+    <div class="desc">Economiza até 3 horas por semana na revisão contábil, evitando erros que custam caro e garantindo segurança na entrega dos seus relatórios.</div>
+    <div class="bullets">
+      <div class="bullet"><div class="icon">✓</div> Acesso imediato à ferramenta de conferência contábil</div>
+      <div class="bullet"><div class="icon">✓</div> Relatórios prontos em poucos segundos com IA</div>
+      <div class="bullet"><div class="icon">✓</div> Pare de revisar manualmente e evite multas por erro</div>
+    </div>
     <div class="offer-tag">OFERTA ÚNICA - DE 1 CLIQUE</div>
     <div class="price-display">Adicionar por apenas <span>R$ 59,90</span></div>
-
-    <!-- BOTÃO DE AÇÃO -->
-    <a href="SEU_LINK_ONE_CLICK_CAKTO" class="btn-cta">SIM, QUERO ADICIONAR</a>
-    
-    <div class="guarantee-note">Adicionar ao meu pedido por apenas R$ 59,90/mês • 7 dias de garantia</div>
-
-    <!-- LINK DE RECUSA -->
-    <a href="URL_PROXIMO_PASSO_OU_OBRIGADO" class="refuse-btn">
-      Não, obrigado. Prefiro manter apenas o Guardião de Contratos e entendo que vou perder este desconto.
-    </a>
+    <a href="SEU_LINK_ONE_CLICK_CAKTO" class="btn-cta">SIM, QUERO ASSINAR</a>
+    <div class="guarantee-note">Adicionar ao meu pedido por apenas R$59,90/mês • 7 dias de garantia</div>
+    <a href="URL_PROXIMO_PASSO_OU_OBRIGADO" class="refuse-btn">Não, obrigado. Prefiro manter apenas o Guardião de Contratos e entendo que vou perder este desconto.</a>
   </div>
-
-  <div class="div-line"></div>
-  <div class="foot-text">2027 © INTER. Todos os direitos reservados.</div>
 </div>
-
 </body>
 </html>
