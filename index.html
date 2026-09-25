@@ -3,35 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>INTER - Conferência Contábil</title>
+<title>Inter - Conferência Contábil</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center;color:#fff}
 .page{width:100%;max-width:420px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;padding:24px 16px 36px;min-height:100vh}
 
-/* BADGE TOP */
-.top-tag{font-size:11px;font-weight:700;color:#A1A1A6;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:18px;text-align:center}
+/* BADGE SUPERIOR - ESTILO PILULA COM BORDA AZUL */
+.bought-badge{background:rgba(0,0,0,0.8);border:1.5px solid #3B82F6;color:#E2E2E6;font-size:11px;font-weight:600;padding:8px 18px;border-radius:999px;text-align:center;margin-bottom:20px;width:fit-content;max-width:95%;line-height:1.3;box-shadow:0 0 10px rgba(59,130,246,0.2)}
 
 /* TITULO PRINCIPAL */
-.main-title{font-size:21px;font-weight:800;line-height:1.25;text-align:center;margin-bottom:10px;letter-spacing:-0.3px;color:#ffffff}
-.main-title span{color:#A855F7}
+.main-title{font-size:20px;font-weight:900;line-height:1.2;text-align:center;margin-bottom:10px;color:#FFFFFF;text-transform:uppercase;letter-spacing:-0.2px}
 
-.sub-title{font-size:13.5px;color:#D1D1D6;text-align:center;line-height:1.45;margin-bottom:22px;font-weight:400;max-width:340px}
+/* APRESENTAÇÃO */
+.intro-text{font-size:14px;color:#E4E4E7;text-align:center;line-height:1.45;margin-bottom:24px;font-weight:400;max-width:340px}
+.intro-text span.purple-highlight{color:#A855F7;font-weight:700}
 
-/* CAIXA DE ESCASSEZ */
-.timer-box{width:100%;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px 16px;text-align:center;margin-bottom:24px}
-.timer-box .t-tag{font-size:11px;font-weight:700;color:#D1D1D6;letter-spacing:0.5px;margin-bottom:4px;text-transform:uppercase}
-.timer-box .t-text{font-size:12.5px;color:#A1A1A6;font-weight:400}
-
-/* O QUE FAZ */
+/* O QUE ELA FAZ */
 .feature-box{width:100%;text-align:center;margin-bottom:24px}
-.feature-title{font-size:14px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;margin-bottom:8px;color:#fff}
-.feature-desc{font-size:13.5px;color:#C7C7CC;line-height:1.5;font-weight:400;max-width:340px;margin:0 auto}
-.feature-desc strong{color:#fff;font-weight:600}
+.feature-title{font-size:15px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;color:#FFFFFF}
+.feature-desc{font-size:13.5px;color:#D4D4D8;line-height:1.5;font-weight:400;max-width:340px;margin:0 auto}
 
-/* CONFIRMAÇÃO DO PRODUTO ANTERIOR */
-.bought-info{font-size:12px;color:#A1A1A6;line-height:1.4;text-align:center;margin-bottom:26px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:8px;width:100%}
+/* CAIXA DE URGÊNCIA - ESTILO PILULA COM BORDA VERMELHA */
+.timer-pill{width:fit-content;max-width:95%;background:#000000;border:1.5px solid #EF4444;border-radius:999px;padding:10px 20px;text-align:center;margin:0 auto 26px auto;box-shadow:0 0 12px rgba(239,68,68,0.2)}
+.timer-pill .t-head{font-size:11px;font-weight:800;color:#FFFFFF;letter-spacing:0.5px;margin-bottom:3px;text-transform:uppercase}
+.timer-pill .t-body{font-size:12px;color:#E4E4E7;font-weight:500}
 
 /* OFERTA E BOTAO */
 .offer-section{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
@@ -39,7 +36,8 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
 .price-display{font-size:22px;font-weight:900;color:#fff;margin-bottom:14px}
 .price-display span{color:#A855F7}
 
-.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:100%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:16px;font-weight:800;font-size:14px;letter-spacing:0.3px;margin-bottom:8px;box-shadow:0 6px 20px rgba(168,85,247,0.25);text-decoration:none;text-transform:uppercase;cursor:pointer}
+/* BOTÃO CTA ESTILO PÍLULA OVAL COMPACTO */
+.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:fit-content;min-width:260px;max-width:90%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:14px 28px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin-bottom:10px;box-shadow:0 6px 20px rgba(168,85,247,0.3);text-decoration:none;text-transform:uppercase;cursor:pointer}
 
 .guarantee-note{font-size:11.5px;color:#A1A1A6;margin-bottom:24px;font-weight:400}
 
@@ -53,39 +51,40 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
 <body>
 
 <div class="page">
-  <!-- TOPO -->
-  <div class="top-tag">(SUA PRIMEIRA ASSINATURA SERÁ LIBERADA)</div>
-
-  <!-- CABEÇALHO -->
-  <div class="main-title">Última chance: Sistema <span>INTER</span> - Conferência Contábil</div>
-  <div class="sub-title">Como blindar sua operação e evitar multas da receita e erros fiscais.</div>
-
-  <!-- ESCASSEZ -->
-  <div class="timer-box">
-    <div class="t-tag">[ Esta oferta expira em 1 hora ]</div>
-    <div class="t-text">Oportunidade única: Leve agora por apenas <strong>R$ 59,90/mês</strong>. Depois volta para R$ 97</div>
+  <!-- BADGE SUPERIOR COM BORDA AZUL -->
+  <div class="bought-badge">
+    (Você acabou de adquirir o Guardião de Contratos por apenas R$ 39,00/mês)
   </div>
 
-  <!-- ENTREGÁVEL -->
+  <!-- TÍTULO BRANCO -->
+  <div class="main-title">ACHAMOS QUE VOCÊ PODE GOSTAR</div>
+
+  <!-- INTRODUÇÃO / APRESENTAÇÃO -->
+  <div class="intro-text">
+    Apresentamos outra ferramenta chamada de Inter <span class="purple-highlight">Conferência Contábil</span>.
+  </div>
+
+  <!-- O QUE ELA FAZ -->
   <div class="feature-box">
-    <div class="feature-title">O QUE A INTER FAZ?</div>
+    <div class="feature-title">O QUE ELA FAZ?</div>
     <div class="feature-desc">
       Te economiza 3h em cada fechamento.<br>
-      <strong>Varre seu balancete e aponta a conta exata que vai te multar no ECD, antes de você enviar.</strong>
+      Varre seu balancete e aponta erros fiscais e a conta exata que vai te multar no ECD, antes de você enviar.
     </div>
   </div>
 
-  <!-- AVISO DE COMPRA -->
-  <div class="bought-info">
-    Você acabou de adquirir o Guardião de Contratos por apenas R$39,90 acesso 100% online automático.
+  <!-- CAIXA DE ESCASSEZ / URGÊNCIA (PÍLULA PRETA COM BORDA VERMELHA) -->
+  <div class="timer-pill">
+    <div class="t-head">(OFERTA EXPIRA EM MENOS DE 1 HORA)</div>
+    <div class="t-body">Oportunidade única: Leve agora por apenas 59,90/mês. Depois volta para R$ 97</div>
   </div>
 
-  <!-- BLOCO DE CHECKOUT -->
+  <!-- OFERTA E BOTÃO DE COMPRA -->
   <div class="offer-section">
     <div class="offer-tag">OFERTA ÚNICA - DE 1 CLIQUE</div>
     <div class="price-display">Adicionar por apenas <span>R$ 59,90</span></div>
 
-    <!-- LINK CAKTO -->
+    <!-- BOTÃO PÍLULA OVAL -->
     <a href="SEU_LINK_ONE_CLICK_CAKTO" class="btn-cta">SIM, QUERO ASSINAR</a>
     
     <div class="guarantee-note">Adicionar ao meu pedido por apenas R$ 59,90/mês • 7 dias de garantia</div>
@@ -97,7 +96,7 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
   </div>
 
   <div class="div-line"></div>
-  <div class="foot-text">INTER 2027©. Todos os direitos reservados.</div>
+  <div class="foot-text">2027 © INTER. Todos os direitos reservados.</div>
 </div>
 
 </body>
