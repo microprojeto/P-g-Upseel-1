@@ -10,10 +10,10 @@
 body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center;color:#fff}
 .page{width:100%;max-width:420px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center;padding:24px 16px 36px;min-height:100vh}
 
-/* BADGE SUPERIOR - ESTILO PILULA COM BORDA AZUL */
-.bought-badge{background:rgba(0,0,0,0.8);border:1.5px solid #3B82F6;color:#E2E2E6;font-size:11px;font-weight:600;padding:8px 18px;border-radius:999px;text-align:center;margin-bottom:20px;width:fit-content;max-width:95%;line-height:1.3;box-shadow:0 0 10px rgba(59,130,246,0.2)}
+/* BADGE SUPERIOR - BORDA E BRILHO VERDE (SEM PARÊNTESES) */
+.bought-badge{background:rgba(0,0,0,0.8);border:1.5px solid #22C55E;color:#E2E2E6;font-size:11.5px;font-weight:600;padding:9px 18px;border-radius:999px;text-align:center;margin-bottom:20px;width:fit-content;max-width:95%;line-height:1.3;box-shadow:0 0 12px rgba(34,197,94,0.25)}
 
-/* TITULO PRINCIPAL */
+/* TÍTULO PRINCIPAL */
 .main-title{font-size:20px;font-weight:900;line-height:1.2;text-align:center;margin-bottom:10px;color:#FFFFFF;text-transform:uppercase;letter-spacing:-0.2px}
 
 /* APRESENTAÇÃO */
@@ -23,21 +23,22 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
 /* O QUE ELA FAZ */
 .feature-box{width:100%;text-align:center;margin-bottom:24px}
 .feature-title{font-size:15px;font-weight:800;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;color:#FFFFFF}
-.feature-desc{font-size:13.5px;color:#D4D4D8;line-height:1.5;font-weight:400;max-width:340px;margin:0 auto}
+.feature-desc-gray{font-size:13.5px;color:#A1A1A6;line-height:1.5;font-weight:400;max-width:340px;margin:0 auto 4px auto}
+.feature-desc-white{font-size:13.5px;color:#FFFFFF;line-height:1.5;font-weight:600;max-width:340px;margin:0 auto}
 
-/* CAIXA DE URGÊNCIA - ESTILO PILULA COM BORDA VERMELHA */
-.timer-pill{width:fit-content;max-width:95%;background:#000000;border:1.5px solid #EF4444;border-radius:999px;padding:10px 20px;text-align:center;margin:0 auto 26px auto;box-shadow:0 0 12px rgba(239,68,68,0.2)}
-.timer-pill .t-head{font-size:11px;font-weight:800;color:#FFFFFF;letter-spacing:0.5px;margin-bottom:3px;text-transform:uppercase}
-.timer-pill .t-body{font-size:12px;color:#E4E4E7;font-weight:500}
+/* CAIXA DE URGÊNCIA - CARD PRETO COM TEXTO VERMELHO E BRANCO */
+.timer-card{width:100%;background:#000000;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:14px 16px;text-align:center;margin:0 auto 26px auto}
+.timer-card .t-head{font-size:12px;font-weight:800;color:#EF4444;letter-spacing:0.5px;margin-bottom:6px;text-transform:uppercase}
+.timer-card .t-body{font-size:13px;color:#FFFFFF;font-weight:500;line-height:1.4}
 
-/* OFERTA E BOTAO */
+/* OFERTA E BOTÃO */
 .offer-section{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
 .offer-tag{font-size:10.5px;font-weight:800;color:#8E8E93;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
 .price-display{font-size:22px;font-weight:900;color:#fff;margin-bottom:14px}
 .price-display span{color:#A855F7}
 
-/* BOTÃO CTA ESTILO PÍLULA OVAL COMPACTO */
-.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:fit-content;min-width:260px;max-width:90%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:14px 28px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin-bottom:10px;box-shadow:0 6px 20px rgba(168,85,247,0.3);text-decoration:none;text-transform:uppercase;cursor:pointer}
+/* BOTÃO CTA PÍLULA OVAL COMPACTO */
+.btn-cta{display:inline-flex;align-items:center;justify-content:center;width:fit-content;min-width:260px;max-width:90%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:15px 28px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin-bottom:10px;box-shadow:0 6px 20px rgba(168,85,247,0.3);text-decoration:none;text-transform:uppercase;cursor:pointer}
 
 .guarantee-note{font-size:11.5px;color:#A1A1A6;margin-bottom:24px;font-weight:400}
 
@@ -51,9 +52,9 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
 <body>
 
 <div class="page">
-  <!-- BADGE SUPERIOR COM BORDA AZUL -->
+  <!-- BADGE SUPERIOR COM BORDA VERDE (SEM PARÊNTESES) -->
   <div class="bought-badge">
-    (Você acabou de adquirir o Guardião de Contratos por apenas R$ 39,00/mês)
+    Você acabou de adquirir o Guardião de Contratos por apenas R$ 39,00/mês
   </div>
 
   <!-- TÍTULO BRANCO -->
@@ -67,15 +68,13 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
   <!-- O QUE ELA FAZ -->
   <div class="feature-box">
     <div class="feature-title">O QUE ELA FAZ?</div>
-    <div class="feature-desc">
-      Te economiza 3h em cada fechamento.<br>
-      Varre seu balancete e aponta erros fiscais e a conta exata que vai te multar no ECD, antes de você enviar.
-    </div>
+    <div class="feature-desc-gray">Te economiza 3h em cada fechamento.</div>
+    <div class="feature-desc-white">Varre seu balancete e aponta erros fiscais e a conta exata que vai te multar no ECD, antes de você enviar.</div>
   </div>
 
-  <!-- CAIXA DE ESCASSEZ / URGÊNCIA (PÍLULA PRETA COM BORDA VERMELHA) -->
-  <div class="timer-pill">
-    <div class="t-head">(OFERTA EXPIRA EM MENOS DE 1 HORA)</div>
+  <!-- CAIXA DE ESCASSEZ (CARD PRETO) -->
+  <div class="timer-card">
+    <div class="t-head">OFERTA EXPIRA EM MENOS DE 1 HORA</div>
     <div class="t-body">Oportunidade única: Leve agora por apenas 59,90/mês. Depois volta para R$ 97</div>
   </div>
 
@@ -84,8 +83,8 @@ body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-cont
     <div class="offer-tag">OFERTA ÚNICA - DE 1 CLIQUE</div>
     <div class="price-display">Adicionar por apenas <span>R$ 59,90</span></div>
 
-    <!-- BOTÃO PÍLULA OVAL -->
-    <a href="SEU_LINK_ONE_CLICK_CAKTO" class="btn-cta">SIM, QUERO ASSINAR</a>
+    <!-- BOTÃO DE AÇÃO -->
+    <a href="SEU_LINK_ONE_CLICK_CAKTO" class="btn-cta">SIM, QUERO ADICIONAR</a>
     
     <div class="guarantee-note">Adicionar ao meu pedido por apenas R$ 59,90/mês • 7 dias de garantia</div>
 
